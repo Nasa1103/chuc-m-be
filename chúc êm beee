@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Buổi Sáng Vui Vẻ</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #d3cce3, #e9e4f0);
+            text-align: center;
+            color: #4b0082;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        h1 {
+            color: #800080;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .butterfly {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-image: url('https://i.imgur.com/f1k7zGZ.png');
+            background-size: cover;
+            animation: fly 10s infinite;
+        }
+        .butterfly:nth-child(1) {
+            top: -10px;
+            left: -10px;
+            animation-duration: 15s;
+        }
+        .butterfly:nth-child(2) {
+            top: 10px;
+            right: -10px;
+            animation-duration: 12s;
+        }
+        .butterfly:nth-child(3) {
+            bottom: -10px;
+            left: 30%;
+            animation-duration: 18s;
+        }
+        @keyframes fly {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+            50% {
+                transform: translate(100px, -50px) rotate(45deg);
+            }
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="butterfly"></div>
+        <div class="butterfly"></div>
+        <div class="butterfly"></div>
+        <h1>Chúc Buổi Sáng Vui Vẻ!</h1>
+        <p>êm beeee uyn buổi sáng zui zẻ nhoooo</p>
+    </div>
+</body>
+</html>
